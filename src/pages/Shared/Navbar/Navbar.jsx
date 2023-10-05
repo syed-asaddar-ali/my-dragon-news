@@ -7,6 +7,7 @@ const Navbar = () => {
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/about'>About</NavLink></li>
         <li><NavLink to='/career'>Career</NavLink></li>
+        <li><NavLink to='/login'>Login</NavLink></li>
         
     </>
     return (
@@ -29,12 +30,13 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <Link className="flex items-center">
-    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+    
+    <label tabIndex={0} className="btn btn-ghost btn-circle avatar flex items-center">
         <div className=" w-10 rounded-full">
           <img src={userDefaultPic} />
         </div>
     </label>
+    <Link to='/Login'>
         <button className="btn">Login</button>
     </Link>
   </div>
